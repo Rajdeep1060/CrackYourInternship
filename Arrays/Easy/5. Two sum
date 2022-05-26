@@ -4,7 +4,7 @@ public:
        vector<int> v;
         unordered_map<int,int> m;
         for(int i=0;i<nums.size();i++){
-           if(m.find(target-nums[i])!=m.end()){
+           if(m.find(target-nums[i])!=m.end()){  //here find checks if the element is already present in the map and if it is present add the index in vector and the current index
                v.push_back(m[target-nums[i]]);
                v.push_back(i);
            }
